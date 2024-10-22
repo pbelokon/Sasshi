@@ -1,0 +1,73 @@
+@import './base.css'; 
+
+main { 
+    width: 100vw;
+    height: 100vh;
+    /* Background */
+    background-image: url("../assets/img/headerBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* Mask image for blending in with background*/
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+    z-index: 9999;
+}
+
+button { 
+    cursor: pointer;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    border: medium;
+    min-width: 155px; 
+    min-height: 48px;
+    background: rgb(51,142,238);
+    background: linear-gradient(90deg, rgba(51,142,238,1) 0%, rgba(52,195,255,1) 30%); 
+
+    /* Transition */
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover { 
+    box-shadow: 0px 0px 25px rgba(52,195,255,1);
+}
+
+/* Socials Navigation */
+
+.socials { 
+    display:  flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.socials a:hover {
+    color: gray;
+}
+
+.wrapper { 
+    z-index: 0;
+    max-width: 1200px;
+    margin: 15rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+.left-col { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+.left-col h2 { 
+    margin-bottom: 0;
+}
+
+
+
+
+
