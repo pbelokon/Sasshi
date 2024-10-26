@@ -2,6 +2,12 @@
     --button-color: rgb(0, 171, 245); 
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body { 
     background-color: black;
     color: white; 
@@ -20,8 +26,9 @@ button {
     font-family: "Inter", sans-serif;;
 }
 
-h1, h2, h3, h4 {
+h1, h3, h4 {
     font-family: "Inter Tight", sans-serif;
+    margin: 0;
 }
 
 
