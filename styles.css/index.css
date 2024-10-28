@@ -145,14 +145,24 @@ main {
     display: flex;
     justify-content: center;
 }
-
+.section-topic{
+    position: absolute; 
+    z-index: 2;
+    top: -5rem;
+    left: 10rem;
+    margin-top: 2rem;
+    color: #c776f9;
+}
+.section-topic span { 
+    margin-right: .3rem;
+    color: #76777c;
+}
 .projects-container { 
     max-width: 1500px;
     display: flex;
     gap: 4rem;
     flex-wrap: wrap;
-    
-    padding: 2rem;
+    justify-content: center;
 }
 
 /* Card */
@@ -175,8 +185,6 @@ main {
         hsl(0 0% 0% / 0.3) 20%,
         hsl(0 0% 0% / 1)
     );
-
-    
 }
 
 
@@ -219,6 +227,14 @@ main {
 .button:hover, 
 .button:focus { 
     background-color: #C9F16D;
+}
+
+/* About */
+.about { 
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* primary pointing device  */
